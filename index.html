@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Welcome to my website</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="dist/js/main.js" defer></script>
+</head>
+
+<body class="bg-primary text-secondary tb:px-0">
+    <header class="container mx-auto relative mt-smlTwo flex justify-between items-center text-base z-50 p-5">
+        <h1><a href="https://github.com/davidddeveloper" target="_blank">@davidddeveloper</a></h1>
+        <!-- desktop nav -->
+        <nav class="hidden tb:block">
+            <ul class="flex gap-5">
+                <li><a href="#"
+                        class="flex flex-col pb-2 after:transition-all relative after:contents after:absolute after:bottom-0 after:w-0 after:border-b-2 after:border-gray after:border-solid hover:after:w-full">Blogs</a>
+                </li>
+                <li><a href="#"
+                        class="flex flex-col pb-2 after:transition-all relative after:contents after:absolute after:bottom-0 after:w-0 after:border-b-2 after:border-gray after:border-solid hover:after:w-full">My
+                        work</a></li>
+                <li><a href="#"
+                        class="flex flex-col pb-2 after:transition-all relative after:contents after:absolute after:bottom-0 after:w-0 after:border-b-2 after:border-gray after:border-solid hover:after:w-full">Resume</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Mobile -->
+        <button class="hamburger-menu flex flex-col gap-1 tb:hidden">
+            <div class="line-1 w-2 h-0 border border-gray transition-all"></div>
+            <div class="line-2 w-4 h-0 border border-gray transition-all"></div>
+            <div class="line-3 w-2 h-0 border border-gray transition-all self-end"></div>
+        </button>
+        <nav
+            class="mb-menu container overflow-hidden absolute inset-0 self-baseline mt-12 p-5 z-0 h-0 opacity-0 bg-darkBlue border-gray shadow-lg rounded-sm transition-all mb:mx-auto tb:hidden">
+            <ul class="hidden flex-col gap-5">
+                <li><a href="#"
+                        class="flex flex-col pb-2 after:transition-all relative after:contents after:absolute after:bottom-0 after:w-0 after:border-b-2 after:border-gray after:border-solid hover:after:w-full">Blogs</a>
+                </li>
+                <li><a href="#"
+                        class="flex flex-col pb-2 after:transition-all relative after:contents after:absolute after:bottom-0 after:w-0 after:border-b-2 after:border-gray after:border-solid hover:after:w-full">My
+                        work</a></li>
+                <li><a href="#"
+                        class="flex flex-col pb-2 after:transition-all relative after:contents after:absolute after:bottom-0 after:w-0 after:border-b-2 after:border-gray after:border-solid hover:after:w-full">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mx-auto  px-5">
+        <!-- Hero Section -->
+        <!-- after:contents after:absolute after:inset-0 after:bottom-1 after:-z-0 after:bg-[url(./assets/images/img_1.png)] after:bg-[contain] after:bg-[center] after:opacity-30 after:-mt-20 
+            before:contents before:absolute before:w-2/5 before:max-w-xs before:top-2/4 before:bottom-2/4 before:border-2 before:border-offWhite
+        -->
+        <section
+            class="hero-section relative flex justify-center items-center isolate  ">
+            <h2 class="text-lg mb:text-xlg text-white flex flex-col items-center relative -mt-28 z-10 before:contents before:absolute before:w-3/4 before:border-2 before:border-offWhite before:top-6 tb:before:top-8 tb:text-xxlg">
+                <span class="text-base text-offWhite tb:-mb-3 tb:text-md">I'm a</span>
+                <span class="text-center">Software Developer</span>
+                <span class="text-base text-offWhite tb:-mt-3 tb:text-md">Started as a hobby</span>
+            </h2>
+        </section>
+        <!-- About me section -->
+        <section class="container mx-auto max-w-3xl">
+            <article class="px-3 py-2 border border-gray rounded-md">
+                <h3 class="text-offWhite text-xsm">davidddeveloper / ABOUTME.md</h3>
+                <div class="flex justify-start gap-4 mt-xsml">
+                    <span class="text-lg">👋</span>
+                    <h4 class="text-lg text-lightBlue">I'm David</h4>
+                </div>
+                <div class="line w-full border border-gray"></div>
+                <div class="mt-xsml border-l-4 border-gray pl-2">
+                    <p class="text-sm">Eversince I was a kid I got so fascinated
+                        about computers💻. I would always
+                        wondered how those tiny manchine can
+                        perform complex and even breath taking
+                        task. This curiosity lead me to pursue a
+                        field in computer science, and start coding
+                        in python at 16.</p>
+                </div>
+                <div class="mt-xsml">
+                    <article class="flex items-center">
+                        <span>🌱</span>
+                        <p class="text-offWhite">I'm a Software Engineering student at
+                            ALX
+                        </p>
+                    </article>
+                    <article class="flex items-center">
+                        <span>🤝</span>
+                        <p class="text-offWhite">I'm looking to collaborate on something
+                            that could change Africa first and then
+                            the entire universe.
+                        </p>
+                    </article>
+                    <article class="flex items-center">
+                        <span>📫</span>
+                        <p class="text-offWhite">You can find me on <a href="https://www.twitter.com/_david_conteh"
+                                target="_blank">X
+                                (twitter)</a></p>
+                    </article>
+                </div>
+                <article class="mt-xsml">
+                    <h3 class="text-md text-lightBlue">Fun fact🤣</h3>
+                    <div class="mt-5">
+                        <p class="border-l-4 border-gray pl-2">
+                            My twin brother is way tall than me
+                            whenever we're out in public people thinks
+                            he is the eldest. That my friend is annoying
+                        </p>
+                    </div>
+                </article>
+            </article>
+        </section>
+
+        <!-- Subscribe section -->
+        <section class="container mx-auto max-w-sm h-screen flex flex-col justify-center">
+            <div class="flex flex-col items-center justify-center">
+                <h3 class="text-lg text-offWhite">Subscribe</h3>
+                <p>to be the first to know when I post a blog</p>
+            </div>
+            <form action="" class="flex flex-col items-center justify-center">
+                <input type="email"
+                    class="text-gray text-sm bg-transparent w-full p-4 border-2 border-gray rounded-xl focus:outline-0 focus:border-0"
+                    placeholder="Email...">
+                <button type="submit" class="mt-xsmlTwo rounded-md bg-lightBlue px-2 py-1 text-white border-none transition-transform hover:scale-125">Sign
+                    up</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-darkBlue">
+        <div class="line border-2 border-gray w-full"></div>
+        <section class="flex flex-col items-center justify-center text-center">
+            <div>
+                <h4 class="text-lg text-white">Hit me up</h4>
+                <p>programmingdonebydavid@gmail.com</p>
+                <p>+232 88224811</p>
+            </div>
+            <div class="mt-sml">
+                <p>Copyright &copy; 2023 davidddeveloper.com</p>
+                <p>All Rights Reserved.</p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

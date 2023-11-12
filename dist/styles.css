@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer;
+
+/* Lenis setup */
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+
+/* Custom styles */
+/* hamburger menu */
+/*@layer components {
+    .hamburger-menu {
+        @apply w-4 border-t border-gray;
+    }
+}*/
+
+/* Animate menu */
+.animate-menu .line-2 {
+    transform: rotate(-43deg);
+}
+
+.animate-menu .line-1 {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.animate-menu .line-3 {
+    transform: rotate(45deg) translate(-2px, -2px);
+}
+
+/* Mobile menu: Show menu */
+.mb-menu.show {
+    height: 200px;
+    inset: 0;
+    opacity: 1;
+}
+
+.mb-menu.show ul {
+    display: flex;
+}
+
+/* Hero Section */
+.hero-section {
+    height: calc(100vh - 85px);
+}
+
+.hero-section::after {
+    background-repeat: no-repeat;
+}
